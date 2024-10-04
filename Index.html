@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Custom styles for this template-->
+    <link href="carousel.rtl.css" reel="stylesheet">
+    <link href="css/heroes.css" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CiMal Colection</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+      </nav>
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/cop.jpg" style="width: 100%;">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Gallery kami</h1>
+            <p class="opacity-75">CiMal Colection</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Beranda</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/nyar.jpeg" width="100%">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Tentang Kami.</h1>
+            <p>Menyediakan berbagai pakaian berbahan lembut dan nyaman, yang pasti cocok untuk semua kalangan terkhusus untuk para remaja perempuan tersedia disini</p>
+            <p><a class="btn btn-lg btn-primary" href="#">selengkapnya</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bengampang.jpg" style="width: 100%;">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Event Kami.</h1>
+            <p>Galeri acara CiMal Colection</p>
+            <p><a class="btn btn-lg btn-primary" href="#">gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Akhir Carousel-->
+  <!-- Galery -->
+
+    <div class="container mt-3">
+        <h2 class="text-center">Tentang kami</h2>
+        <p class="text-center">Menyediakan berbagai pakaian berbahan lembut dan nyaman, yang pasti cocok untuk semua kalangan terkhusus untuk para remaja perempuan tersedia disini</p>
+        <div class="container px-4 py-5" id="feature-3">
+            <h2 class="pb-2 border-bottom text-center">Feature</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-item-center justify-content-center bg-gradient fs-2 mb-3">
+                        <img src="img/logo - Copy.jpeg" alt="" style="width: 100%; height: auto;">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Produk CiMal</h3>
+                    <p>Produk pakaian kami dijamin berbeda dengan produk pakaian lainnya. Karena produk pakaian kami menggunakan bahan-bahan yang dipercaya akan kualitasnya.</p>
+                    <a href="#" class="icon-link">
+                        Call to Action
+                        <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                    </a>
+                </div>
+                <div class="feature con">
+                    <div class="feature-icon d-inline-flex align-item-center justify-content-center fs-2 mb-3">
+                        <img src="img/i - Copy.jpeg" alt="" style="width: 100%; height: auto;">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">R&D Berpengalaman</h3>
+                    <p>Kami mampu mewujudkan desain elegan yang sulit dicari dipasaran dan nyaman digunakan dalam kegiatanmu sehari-hari</p>
+                    <a href="#" class="icon-link">
+                    </a>
+                </div>
+                <div class="feature con">
+                    <div class="feature-icon d-inline-flex align-item-center justify-content-center fs-2 mb-3">
+                        <img src="img/e - Copy.jpeg" alt="" style="width: 100%; height: auto;">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Jaminan kualitas</h3>
+                    <p>Kami hasilkan produk pakaian yang memiliki kualitas terjamin. Dimana produk kami telah dipakai oleh beberapa aktor ternama, serta kami telah memiliki beberapa cabang diluar kota.</p>
+                    <a href="#" class="icon-link">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-item-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="img/memudahkan.jpg" class="d-block mx-lg-auto img-fluid" alt="bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis 1h-1 mb-3">Abous us</h1>
+                    <p class="lead">CiMal Colection Indonesia merupakan sebuah butik pakaian terbesar di Jawa Timur, Indonesia. Kami telah memproduksi banyak desain pakaian yang cantik dan elegan tidak kurang dari 150 desain. Dibentuk dan dikembangkan oleh desainer yang berpengalaman dan didukung oleh karyawan muda yang memiliki semangat dan inovatif.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                        <button type="button" class="btn btn outline-secondary btn-lg px-4">Default</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                  <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contact Us</h1>
+                  <p class="col-lg-10 fs-4">Jika anda masih memiliki pertanyaan yang belum terjawab, kami dapat memberi layanan konsultasi gratis bagi anda. jangan ragu hubungi kami tim marketing kami sangat terbuka dan siap melayani semua kebutuhan anda akan pakaian yang berkualitas.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                  <form class="p-4 p-md-5 border rounded-3" style="background-color:rgb(249, 246, 246)">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                      <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                      </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                    <hr class="my-4">
+                    <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                  </form>
+                </div>  
+            </div>
+        </div>
+        <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+              </ul>
+              <p class="text-center text-body-secondary">2024 BarDy</p>
+            </footer>
+          </div>
+          
+    </div>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
